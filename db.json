@@ -1,0 +1,19 @@
+{
+  "devs": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 30,
+      "level": "Intermediate",
+      "techStack": "Mobile development",
+      "programmingLanguage": "Java"
+    },
+    {
+      "age": 12,
+      "level": "Novice",
+      "techStack": "Web development",
+      "programmingLanguage": "JavaScript",
+      "id": 2
+    }
+  ]
+}

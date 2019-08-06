@@ -1,0 +1,82 @@
+openapi: 3.0.0
+info:
+  version: 'v1'
+  title: 'Developers API Documentation'
+  description: |
+   # API documentation for Developers app project, this API allows you to add, remove, get or update developers profile
+   ## [View Repository](https://github.com/Oliver-ke/Auto_Mart)
+  contact:
+    email: kelechioliver96@gmail.com
+
+tags:
+- name: Dev
+  description: Allows you to add,delete,get and update dev
+
+paths:
+  /devs:
+    post:
+      tags:
+        - Dev
+      summary: Add a new developer
+      operationId: addDev
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                age:
+                  type: integer
+                level:
+                  type: string
+                techStack:
+                  type: string
+                programmingLanguage:
+                  type: string
+
+# defines the api's response
+      responses:
+        '201':
+          description: 'Resource Create'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name: string
+                  age:
+                    type: integer
+                  level:
+                    type: string
+                  techStack:
+                    type: string
+                  programmingLanguage:
+                    type: string
+
+
+components:
+  schemas:
+    Devs:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        age:
+          type: string
+        level:
+          type: string
+        techStack:
+          type: string
+        programmingLanguage:
+          type: string
+          description: A developers language proficiency
+
+servers:
+  - description: Local json-server
+    url: http://localhost:5000
