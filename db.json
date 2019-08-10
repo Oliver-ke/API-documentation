@@ -14,6 +14,14 @@
       "techStack": "Web development",
       "programmingLanguage": "JavaScript",
       "id": 2
+    },
+    {
+      "name": "John Doe",
+      "age": 23,
+      "level": "Novice",
+      "techStack": "MEAN Stack",
+      "programmingLanguage": "JavaScript",
+      "id": 3
     }
   ]
 }

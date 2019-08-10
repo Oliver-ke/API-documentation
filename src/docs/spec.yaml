@@ -35,7 +35,6 @@ paths:
                   type: string
                 programmingLanguage:
                   type: string
-
 # defines the api's response
       responses:
         '201':
@@ -56,7 +55,31 @@ paths:
                     type: string
                   programmingLanguage:
                     type: string
-
+    get:
+      tags:
+        - Dev
+      summary: Get all developer
+      operationId: getDev
+      description: Returns all avaliable developers
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    age:
+                      type: integer
+                    level:
+                      type: string
+                    techStack:
+                      type: string
+                    programmingLanguage:
+                      type: string
 
 components:
   schemas:
