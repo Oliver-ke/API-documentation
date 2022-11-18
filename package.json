@@ -6,7 +6,7 @@
 		"json-server": "^0.15.0",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
-		"react-scripts": "3.0.1",
+		"react-scripts": "5.0.1",
 		"swagger-ui-react": "^3.23.4"
 	},
 	"scripts": {
